@@ -1,0 +1,19 @@
+{
+  "name": "app-info-server",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "node ./bin/www",
+    "db": "redis-server"
+  },
+  "author": "John-Lin <linton.tw@gmail.com> (http://linton.tw)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "hiredis": "^0.4.1",
+    "morgan": "^1.7.0",
+    "redis": "^2.3.1",
+    "winston": "^2.2.0"
+  }
+}

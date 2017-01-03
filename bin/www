@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+'use strict';
+let app = require('../app');
+
+app.set('port', process.env.PORT || 12001);
+
+let server = app.listen(app.get('port'), () => {
+  console.log(`Express server listening on port ${server.address().port}`);
+});
