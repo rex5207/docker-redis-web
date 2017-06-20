@@ -47,6 +47,7 @@ router.post('/:id([0-9a-zA-Z]{64})', (req, res) => {
       res.sendStatus(201);
     }
   });
+  rd.expire(flowID, 120);
 });
 
 /*
